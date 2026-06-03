@@ -1,10 +1,61 @@
-# Telegram Scraper v1.6 [Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
+<!-- ========================================================================= -->
+<!--                        TELEGRAMSCRAPER — README                            -->
+<!--       Cyberpunk Premium Theme  |  Animated SVGs  |  Live Badges          -->
+<!-- ========================================================================= -->
 
-A powerful, multi-account Telegram group member scraper and adder with encrypted session storage, automatic account rotation, and a rich terminal UI.
+<div align="center">
 
----
+<!-- ============================== BANNER ============================== -->
 
-## Features
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=0:000000,50:001F0D,100:000000&height=180&section=header&text=TelegramScraper&fontSize=48&fontColor=00FF88&fontAlignY=38&animation=fadeIn" width="100%"/>
+
+<!-- ============================== TYPING SVG ============================== -->
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Source%20Code%20Pro&weight=500&size=22&duration=3500&pause=800&color=00FF88&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%3E%20Welcome%20to%20TelegramScraper%20%F0%9F%9A%80;%3E%20Built%20using%20Code%20%7C%20Optimized%20%26%20Secure;%3E%20Scrape%20Telegram%20group%20members%20%28hidden%20me...)](https://github.com/VarshuAi/TelegramScraper)
+
+<br/>
+
+![Version](https://img.shields.io/badge/Version-1.0-00FF88?style=for-the-badge&logo=github&logoColor=black)
+![Language](https://img.shields.io/badge/Code-Tech-00CC66?style=for-the-badge&logo=code&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Active-14354C?style=for-the-badge&logo=git&logoColor=white)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:001F0D,100:000000&height=60&section=header&text=&fontSize=0" width="100%"/>
+
+</div>
+
+<!-- ============================== ABOUT ============================== -->
+
+<h2>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+<samp>&nbsp;ABOUT</samp>
+</h2>
+
+```yaml
+name: TelegramScraper
+version: 1.0
+type: Repository
+author: VarshuAi
+description: >
+  Scrape Telegram group members (hidden members also) and add them to yours.
+primary_tech: Code
+```
+
+<!-- ============================== CENTRAL GRAPHIC ============================== -->
+
+<div align="center">
+<br>
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=VarshuAi&repo=TelegramScraper&theme=react-dark&bg_color=000000&color=00FF88&line=00FF88&point=00CC66)](https://github.com/VarshuAi/TelegramScraper)
+<br>
+</div>
+
+<!-- ============================== FEATURES ============================== -->
+
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;FEATURES</samp>
+</h2>
 
 - **Multi-Account Support** — Log in multiple Telegram accounts and rotate between them automatically
 - **3 Login Methods** — Phone number (OTP + 2FA), QR code scan, or Telegram Desktop TData import
@@ -23,101 +74,12 @@ A powerful, multi-account Telegram group member scraper and adder with encrypted
 [Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
 ---
 
-## Prerequisites
+<!-- ============================== COMMANDS ============================== -->
 
-- **Python 3.8+**
-- **Git** (required to install the Pyrogram fork)
-- **Telegram API Credentials** (API_ID and API_HASH)
-
----
-
-## Installation
-
-### 1. Get the project
-
-**If you have repo access:**
-```bash
-git clone <repository-url>
-cd TelegramScraper
-```
-
-**If you received a ZIP:**
-```
-Extract the ZIP to a folder and open a terminal there.
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-> **Note:** TgCrypto is mandatory. Without it, Pyrogram falls back to a pure-Python AES implementation that is extremely slow and will lock up scraping tasks. The app will refuse to start if TgCrypto is not installed.
-
-If TgCrypto fails to install, make sure you have a C compiler available:
-- **Windows:** Install [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-- **Linux/Termux:** `sudo apt install build-essential` (or `pkg install build-essential` on Termux)
-- **macOS:** `xcode-select --install`
-
-### 3. Get Telegram API credentials
-
-1. Visit [https://my.telegram.org/apps](https://my.telegram.org/apps)
-2. Log in with your Telegram phone number
-3. Click **"Create New Application"**
-4. Fill in the app name (e.g., "MyApp") and any other required fields
-5. Copy your **API_ID** (a number) and **API_HASH** (a string)
-
-### 4. Create the `.env` file
-
-Create a file named `.env` in the project root:
-
-```env
-API_ID=12345678
-API_HASH=your_api_hash_here
-```
-
-Replace the values with your actual credentials from step 3.
-
-### 5. Run
-
-```bash
-python main.py
-```
-
----
-
-## Quick Start
-
-When you launch the tool, you'll see the main menu:
-
-```
-TelegramScraper v1.6
-ℹ 0 sessions loaded (check Manage Sessions for status)
-
-┌─────────────────────┐
-│      Main Menu      │
-├─────────────────────┤
-│  01  Login Telegram Account
-│  02  Members Scraper
-│  03  Members Adder
-│  04  Message Broadcast
-│  05  Manage Sessions
-│
-│  99  About
-│  00  Exit
-└─────────────────────┘
-› Choose an option:
-```
-
-**Typical workflow:**
-1. **Login** one or more Telegram accounts (Option 01)
-2. **Scrape** members from a source group (Option 02)
-3. **Add** scraped members to a target group (Option 03)
-4. **Broadcast** a message to all scraped members (Option 04)
-
----
-
-## Usage Guide
+<h2>
+<img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28">
+<samp>&nbsp;COMMANDS & USAGE</samp>
+</h2>
 
 ### Option 01 — Login Telegram Account
 
@@ -361,7 +323,62 @@ Displays tool information: name, version, developer, and contact details.
 
 ---
 
-## Project Structure
+<!-- ============================== TECH STACK ============================== -->
+
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;TECH STACK</samp>
+</h2>
+
+<div align="center">
+
+#### `>> SYSTEM INVENTORY`
+![Code](https://img.shields.io/badge/Code-Primary_Language-00FF88?style=for-the-badge&logoColor=black)
+![Git](https://img.shields.io/badge/Git-VCS-00CC66?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
+
+<!-- ============================== SETUP ============================== -->
+
+<h2>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28">
+<samp>&nbsp;SETUP</samp>
+</h2>
+
+When you launch the tool, you'll see the main menu:
+
+```
+TelegramScraper v1.6
+ℹ 0 sessions loaded (check Manage Sessions for status)
+
+┌─────────────────────┐
+│      Main Menu      │
+├─────────────────────┤
+│  01  Login Telegram Account
+│  02  Members Scraper
+│  03  Members Adder
+│  04  Message Broadcast
+│  05  Manage Sessions
+│
+│  99  About
+│  00  Exit
+└─────────────────────┘
+› Choose an option:
+```
+
+**Typical workflow:**
+1. **Login** one or more Telegram accounts (Option 01)
+2. **Scrape** members from a source group (Option 02)
+3. **Add** scraped members to a target group (Option 03)
+4. **Broadcast** a message to all scraped members (Option 04)
+
+---
+
+<!-- ============================== STRUCTURE ============================== -->
+
+<h2>
+<samp>&nbsp;📁 STRUCTURE</samp>
+</h2>
 
 ```
 TelegramScraper/
@@ -396,89 +413,23 @@ TelegramScraper/
 [Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
 ---
 
-## Security
+<!-- ============================== FOOTER ============================== -->
 
-- **Session Encryption:** All Telegram session strings are encrypted using Fernet (AES-128-CBC + HMAC-SHA256). The encryption key is derived from your password using PBKDF2 with 480,000 iterations and a random 16-byte salt.
-- **Local Storage Only:** All data (sessions, member lists, logs) is stored locally on your machine. The tool does not send data to any external server.
-- **Phone Masking:** Phone numbers are always displayed masked in the UI and logs (e.g., `+1234***890`).
-- **Credential Safety:** API credentials are loaded from `.env` which is excluded from version control via `.gitignore`.
-- **No Session Logging:** Session strings are never written to log files.
+<div align="center">
 
----
+<br/>
 
-## Troubleshooting
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=0:000000,50:001F0D,100:000000&height=80&section=footer&text=&fontSize=0" width="100%"/>
 
-### TgCrypto won't install
+<br/>
 
-TgCrypto is a C extension that requires a compiler:
-- **Windows:** Install [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), then retry `pip install TgCrypto`
-- **Linux:** Run `sudo apt install build-essential python3-dev`, then retry
-- **Termux:** Run `pkg install build-essential`, then retry
-- **macOS:** Run `xcode-select --install`, then retry
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Source%20Code%20Pro&size=14&duration=4000&pause=1000&color=00FF88&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+VarshuAi;Build+Fast.+Ship+Secure.+Scale+Infinite.)](https://github.com/VarshuAi)
 
-### "API_ID and API_HASH must be set"
+<br/>
 
-You're missing the `.env` file or it has incorrect values:
-1. Create a `.env` file in the project root
-2. Add your credentials: `API_ID=12345678` and `API_HASH=your_hash`
-3. Make sure there are no spaces around the `=` sign
+[![GitHub](https://img.shields.io/badge/VarshuAi-Profile-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi)
+[![Repo](https://img.shields.io/badge/TelegramScraper-Repo-00CC66?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi/TelegramScraper)
 
-### FloodWait / PeerFlood errors
+<br/>
 
-These are Telegram rate limits, not bugs:
-- **FloodWait:** Telegram is asking you to slow down. The tool handles this automatically — small waits are waited out, large waits trigger account switching.
-- **PeerFlood:** Your account has been flagged for adding too many users. Switch to a different account or wait a few hours/days.
-
-### Session decryption failure
-
-If you see decryption errors when testing sessions:
-- Make sure you're entering the correct encryption password
-- If you've forgotten your password, delete the affected session files from `sessions/` and log in again
-
-### Scraping returns fewer members than expected
-
-- **Non-hidden scraping** only works if the group's members list is visible. Some groups restrict this.
-- **Hidden scraping** extracts members from messages, so inactive members who never post or get mentioned won't be found.
-- Bots are automatically filtered out from results.
-
----
-
-## FAQ
-
-**Can I run multiple instances at the same time?**
-No. Session files and CSV data are shared, so running multiple instances can cause conflicts and data corruption.
-
-**Is my session safe?**
-Yes. Session strings are encrypted with Fernet using a password-derived key (PBKDF2, 480k iterations). Without your password, the encrypted session is unreadable.
-
-**What if I forget my encryption password?**
-Stored sessions cannot be recovered. You'll need to delete the `sessions/` directory and log in to your accounts again.
-
-**Why does scraping miss some members?**
-Non-hidden scraping only sees members in the public list. For groups that hide their member list, use the hidden scraping option which extracts members from message history. Members who never posted or were mentioned won't be captured by either method.
-
-**How many accounts do I need?**
-Minimum 1. However, having multiple accounts helps with FloodWait rotation — when one account gets rate-limited, the tool automatically switches to the next available one.
-
-**Does this work on mobile (Termux)?**
-Yes. The tool runs on any platform with Python 3.8+: Windows, macOS, Linux, and Termux (Android). All dependencies are cross-platform.
-
-**What happens if I interrupt a scrape with Ctrl+C?**
-For hidden member scraping, progress is automatically saved to a checkpoint file. Next time you scrape the same group, you'll be offered to resume. For non-hidden scraping, members collected so far are still saved.
-
----
-
-## Support & Pricing
-
-| | |
-|---|---|
-| **Price** | 80 USD |
-| **Purchase & Support** | [Contact on Telegram](https://t.me/AkibHridoy) |
-
-You will get full Python source code access for lifetime & future updates.
-
-### Developer
-
-**Abir Hasan**
-- GitHub: [github.com/AbirHasan2005](https://github.com/AbirHasan2005)
-- Telegram: [t.me/AbirHasan2005](https://t.me/AbirHasan2005)
+</div>
