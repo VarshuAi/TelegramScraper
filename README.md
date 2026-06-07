@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  Scrape Telegram group members (hidden members also) and add them to yours.
+  name: TelegramScraper version: 1.0 type: Repository author: VarshuAi description: >   Scrape Telegram group members (hidden members also) and add them to yours. primary_tech: Code
 primary_tech: Code
 ```
 
